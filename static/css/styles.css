@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat&display=swap');
+
+
+:root {
+  --clash-blue: #003A7B;
+  --clash-yellow: #FCFFDE;
+  --clash-green: #91BEA0;
+  --clash-teal: #6997A8;
+  --display-font: "DM Serif Text"
+}
+
+
+.gameboard {
+  border-color: transparent;
+}
+
+.question{
+    height:100px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 35px;
+    color: var(--clash-yellow);
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+
+.question.unanswered {
+  background-color: var(--clash-blue);
+}
+
+.question {
+  background-color: var(--clash-yellow);
+}
+
+.question.unanswered:hover  {
+  background: linear-gradient(135deg, red, white);
+  opacity: 30%;
+  color: black;
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+}
+
+body {
+    /*background-image: url("background.png");
+    background-size: cover;
+    background-position: center;*/
+    background: conic-gradient(from 0deg, var(--clash-teal), var(--clash-green), var(--clash-teal), var(--clash-yellow), var(--clash-teal));
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.button-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  
+  .button-grid button {
+    width: 100%;
+    height: 50px;
+  }
+
+  .answer-button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .answer-button:focus,
+  .answer-button:active:focus,
+  .answer-button.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  .answer-button:hover,
+  .answer-button:focus {
+    color: #333;
+    text-decoration: none;
+  }
+  .answer-button:active,
+  .answer-button.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+  .answer-button.disabled,
+  .answer-button[disabled],
+  fieldset[disabled] .answer-button {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+
+  .gameboard .panel-heading {
+    font-family: var(--display-font);
+    background-color: var(--clash-blue);
+    color: var(--clash-yellow);
+    border-color: transparent;
+  }
+
+  .gameboard .panel-footer {
+    background-color: var(--clash-yellow);
+    border-color: transparent;
+  }
+
+  .gameboard .panel-body {
+    border-color: transparent;
+    background-color: var(--clash-yellow);
+  }
