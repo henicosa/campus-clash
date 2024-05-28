@@ -2,10 +2,10 @@
 
 
 :root {
-  --clash-blue: #003A7B;
-  --clash-yellow: #FCFFDE;
-  --clash-green: #91BEA0;
-  --clash-teal: #6997A8;
+  --clash-blue: #00177b;
+  --clash-yellow: #ffffff;
+  --clash-green: #ffffff;
+  --clash-teal: #faf0d2;
   --display-font: "DM Serif Text"
 }
 
@@ -37,10 +37,10 @@
 }
 
 .question.unanswered:hover  {
-  background: linear-gradient(135deg, red, white);
-  opacity: 30%;
-  color: black;
+  /*background: linear-gradient(135deg, red, rgb(255, 181, 181));*/
+  opacity: 70%;
 }
+
 
 h1 {
   font-family: "DM Serif Text", serif;
@@ -119,11 +119,19 @@ body {
 
 
   .gameboard .panel-heading {
-    font-family: var(--display-font);
-    background-color: var(--clash-blue);
-    color: var(--clash-yellow);
+    font-family: var(--body-font);
+
+    background-color: var(--clash-yellow);
+    color: var(--clash-blue);
     border-color: transparent;
   }
+
+  .gameboard .panel-heading h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+
 
   .gameboard .panel-footer {
     background-color: var(--clash-yellow);

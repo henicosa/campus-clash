@@ -3,8 +3,8 @@
         "name":"Studi-Leben",
         "questions":[
             {
-                "value":100,
-               "question":"Question 1 in category 1 for 100 points",
+                "value":10,
+               "question":"Question 1 in category 1 for 10 points",
                 "answers":[
                     {
                         "text":"A",
@@ -25,8 +25,8 @@
                 ]
             },
             {
-                "value":200,
-               "question":"Question 2 in category 1 for 200 points",
+                "value":20,
+               "question":"Question 2 in category 1 for 20 points",
                 "answers":[
                     {
                         "text":"A",
@@ -47,8 +47,8 @@
                 ]
             },
             {
-                "value":300,
-               "question":"Question 3 in category 1 for 300 points",
+                "value":30,
+               "question":"Question 3 in category 1 for 30 points",
                 "answers":[
                     {
                         "text":"A",
@@ -74,8 +74,8 @@
         "name":"Hybridseminar",
         "questions":[
             {
-                "value":100,
-               "question":"Question 1 in category 2 for 100 points",
+                "value":10,
+               "question":"Question 1 in category 2 for 10 points",
                 "answers":[
                     {
                         "text":"A",
@@ -96,8 +96,8 @@
                 ]
             },
             {
-                "value":200,
-               "question":"Question 2 in category 2 for 200 points",
+                "value":20,
+               "question":"Question 2 in category 2 for 20 points",
                 "answers":[
                     {
                         "text":"A",
@@ -118,8 +118,8 @@
                 ]
             },
             {
-                "value":300,
-               "question":"Question 3 in category 2 for 300 points",
+                "value":30,
+               "question":"Question 3 in category 2 for 30 points",
                 "answers":[
                     {
                         "text":"A",
@@ -145,8 +145,8 @@
         "name":"Mensa",
         "questions":[
             {
-                "value":100,
-               "question":"Question 1 in category 3 for 100 points",
+                "value":10,
+               "question":"Question 1 in category 3 for 10 points",
                 "answers":[
                     {
                         "text":"A",
@@ -167,8 +167,8 @@
                 ]
             },
             {
-                "value":200,
-               "question":"Question 2 in category 3 for 200 points",
+                "value":20,
+               "question":"Question 2 in category 3 for 20 points",
                 "answers":[
                     {
                         "text":"A",
@@ -189,8 +189,8 @@
                 ]
             },
             {
-                "value":300,
-               "question":"Question 3 in category 3 for 300 points",
+                "value":30,
+               "question":"Question 3 in category 3 for 30 points",
                 "answers":[
                     {
                         "text":"A",
@@ -216,8 +216,8 @@
         "name":"Vorlesungs-verzeichnis",
         "questions":[
             {
-                "value":100,
-               "question":"Question 1 in category 4 for 100 points",
+                "value":10,
+               "question":"Question 1 in category 4 for 10 points",
                 "answers":[
                     {
                         "text":"A",
@@ -238,8 +238,8 @@
                 ]
             },
             {
-                "value":200,
-               "question":"Question 2 in category 4 for 200 points",
+                "value":20,
+               "question":"Question 2 in category 4 for 20 points",
                 "answers":[
                     {
                         "text":"A",
@@ -260,8 +260,8 @@
                 ]
             },
             {
-                "value":300,
-               "question":"Question 3 in category 4 for 300 points",
+                "value":30,
+               "question":"Question 3 in category 4 for 30 points",
                 "answers":[
                     {
                         "text":"A",
@@ -288,8 +288,8 @@
         "name":"Prüfungsamt",
         "questions":[
             {
-                "value":100,
-               "question":"Question 1 in category 4 for 100 points",
+                "value":10,
+               "question":"Question 1 in category 4 for 10 points",
                 "answers":[
                     {
                         "text":"A",
@@ -310,8 +310,8 @@
                 ]
             },
             {
-                "value":200,
-               "question":"Question 2 in category 4 for 200 points",
+                "value":20,
+               "question":"Question 2 in category 4 for 20 points",
                 "answers":[
                     {
                         "text":"A",
@@ -332,8 +332,8 @@
                 ]
             },
             {
-                "value":300,
-               "question":"Question 3 in category 4 for 300 points",
+                "value":30,
+               "question":"Question 3 in category 4 for 30 points",
                 "answers":[
                     {
                         "text":"A",
