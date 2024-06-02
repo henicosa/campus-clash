@@ -28,6 +28,9 @@ $(function(){
                     '>'+ answer.text+'</button>'
             )
         });
+        // add answer button to submit answer
+        //$('.modal-footer').append('<button class="btn btn-primary center submit-answer">Submit</button>');
+        
         $('#question-modal').modal('show');
         console.log(category, question);
         console.log(map[category].questions[question]);
@@ -40,7 +43,7 @@ var score = [{name: "Team A", score: 0},
                 {name: "Team C", score: 0}]
 var round = 0;
 var map;
-function loadBoard(){
+function loadBoard(){answers
     var board = $('#main-board');
     var columns = map.length;
     var column_width = parseInt(12/columns);
@@ -87,12 +90,53 @@ function handleAnswer(){
     $('.answer').click(function(){
         var tile= $('div[data-category="'+$(this).data('category')+'"]>[data-question="'+$(this).data('question')+'"]')[0];
         $(tile).empty().removeClass('unanswered').unbind().css('cursor','not-allowed');
-        if ($(this).data('correct')){
-            console.log(score.length)
-            score[round % score.length].score += parseInt($(this).data('value'));
+
+        var myelement = $(this);
+        // set element to selected
+    
+        $(this).addClass('selected');
+       
+        setTimeout(function(){
+
+
+        // set background color to red if incorrect
+        if (myelement.data('correct') == false){
+            myelement.addClass('incorrect');
+            // get question with correct answer which is one of the siblings
+            var correct = myelement.siblings('[data-correct="true"]');
+            correct.addClass('correct').css('cursor','not-allowed');
+
         }
-        $('#question-modal').modal('hide');
-        round += 1;
-        updateScore();
+        if (myelement.data('correct')){
+            myelement.addClass('correct');
+            console.log(score.length)
+            score[round % score.length].score += parseInt(myelement.data('value'));
+        }
+    }, 1500);
+    
+        // wait before closing modal
+        setTimeout(function(){
+            //$('#question-modal').modal('hide');
+            round += 1;
+            updateScore();
+        }, 4000);
+
+        setTimeout(function(){
+            $('#question-modal').modal('hide');
+        }, 7000);
+
+       
+
+        //$('#question-modal').modal('hide');
+        
     })
 }
+
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+  
