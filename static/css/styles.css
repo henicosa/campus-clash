@@ -6,7 +6,7 @@
   --clash-yellow: #fbff92;
   --clash-teal: #00e3dc;
   --clash-green: #cefda1;
-  --clash-red: #ff0000;
+  --clash-red: #ff8383;
   --clash-white: #ffffff;
   --display-font: "DM Serif Text";
   --interface-background: var(--clash-green);
@@ -68,7 +68,7 @@
 }
 
 .correct {
-  background-color: #00ff00;
+  background-color: #8dff8d;
   --webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
