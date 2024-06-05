@@ -86,8 +86,12 @@ function updateScore(){
     $('#score').empty().append(msg);
 }
 
+var actionInProgress = false;
+
 function handleAnswer(){
     $('.answer').click(function(){
+        if (!actionInProgress) {
+        actionInProgress = true;
         var tile= $('div[data-category="'+$(this).data('category')+'"]>[data-question="'+$(this).data('question')+'"]')[0];
         $(tile).empty().removeClass('unanswered').unbind().css('cursor','not-allowed');
 
@@ -119,6 +123,7 @@ function handleAnswer(){
             //$('#question-modal').modal('hide');
             round += 1;
             updateScore();
+            actionInProgress = false;
         }, 4000);
 
         setTimeout(function(){
@@ -129,7 +134,8 @@ function handleAnswer(){
 
         //$('#question-modal').modal('hide');
         
-    })
+}
+})
 }
 
 function sleep(milliseconds) {
