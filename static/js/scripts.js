@@ -15,12 +15,13 @@ $(function(){
         var question = $(this).data('question');
         var value = map[category].questions[question].value;
         var answers = $('#answers');
+        resizeClass = " more-text"
         $('.modal-title').empty().text(map[category].name);
         $('#question').empty().text(map[category].questions[question].question);
         answers.empty();
         $.each(map[category].questions[question].answers, function(i, answer){
             answers.append(
-                '<button class="answer-button answer" ' +
+                '<button class="answer-button answer' + resizeClass + '" ' +
                     'data-category="'+category+'"' +
                     'data-question="'+question+'"' +
                     'data-value="'+value+'"' +
